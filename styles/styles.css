@@ -1,0 +1,156 @@
+body {
+  font-family: "Chelsea Market";
+}
+
+#game-board {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  height: 700px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgb(98, 214, 98);
+  height: 4.5rem;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.player {
+  text-align: center;
+}
+
+/* Splash Screen Styling */
+#splash-screen {
+  position: relative;
+  bottom: 0;
+  height: 532px;
+  background-image: url(../media/palm-trees.png);
+  background-size: cover;
+  border-radius: 10px;
+}
+#start-btn {
+  position: absolute;
+  top: 21rem;
+  left: 13rem;
+}
+#difficulty-wrapper {
+  position: absolute;
+  top: 6rem;
+  left: 11rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 4rem;
+}
+h2,
+label {
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+#instructions-btn {
+  position: absolute;
+  bottom: 3rem;
+  left: 1.5rem;
+}
+.name-input {
+  position: absolute;
+  left: 8rem;
+  top: 1rem;
+  font-size: 1.1rem;
+  text-shadow: 0 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;
+}
+
+#instructions-banana,
+#instructions-pineapple {
+  position: static;
+}
+
+.modal-title {
+  color: black;
+  text-shadow: none;
+}
+/*Game Screen Styling */
+
+#game-screen {
+  display: none;
+  position: relative;
+  bottom: 0;
+  height: 532px;
+  background-image: url(../media/palm-trees.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#time-display {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+#score-counter {
+  position: absolute;
+  bottom: 1rem;
+  left: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  text-shadow: 0 0 5px white;
+}
+#life-counter {
+  position: absolute;
+  bottom: 1rem;
+  left: 24rem;
+  width: 7rem;
+}
+
+#life-counter img {
+  width: 1.5rem;
+}
+.banana {
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.1ms;
+}
+.pineapple {
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.1ms;
+}
+
+/* Game Over Screen */
+
+#game-over-scrn {
+  display: none;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  height: 532px;
+  background-color: black;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#final-score-display {
+  position: relative;
+  top: 3rem;
+  font-size: 3rem;
+  color: white;
+}
+#game-over-btns {
+  position: relative;
+  top: 11rem;
+  display: flex;
+  justify-content: space-evenly;
+}
